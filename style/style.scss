@@ -67,16 +67,18 @@ header {
                     background-color: #fff;
                     color: #0c7070;
                     border-radius: 20px 20px 20px 0;
-                    .hidden1{
-                        display: flex;
-                    }
-                    .hidden2{
+
+                    .hidden1 {
                         display: flex;
                     }
 
-                    &:nth-child(2){
+                    .hidden2 {
+                        display: flex;
+                    }
+
+                    &:nth-child(2) {
                         border-radius: 20px 20px 0 20px;
-                        
+
                     }
 
                 }
@@ -96,7 +98,8 @@ header {
             margin-top: 40px;
             margin-right: 50px;
             transition: 1s display;
-            &:nth-of-type(2){
+
+            &:nth-of-type(2) {
                 margin-right: 0;
             }
 
@@ -110,7 +113,8 @@ header {
                     color: #0a4646;
                     background-color: #fff;
                     text-align: center;
-                    &:nth-child(even){
+
+                    &:nth-child(even) {
                         color: #ffff;
                         background-color: #0a4646;
                     }
@@ -132,7 +136,8 @@ header {
             margin-top: 40px;
             margin-left: 20px;
             transition: 1s display;
-            &:nth-of-type(2){
+
+            &:nth-of-type(2) {
                 margin-right: 0;
             }
 
@@ -147,7 +152,8 @@ header {
                     background-color: #fff;
                     width: 170px;
                     text-align: center;
-                    &:nth-child(even){
+
+                    &:nth-child(even) {
                         color: #ffff;
                         background-color: #0a4646;
                     }
@@ -211,54 +217,80 @@ header {
         }
     }
 }
-
-.main-schedule{
+//CSS styling for the Timetable form schedule
+.main-schedule {
     width: 80%;
     margin: 30px auto;
     border: 1px solid green;
-    .init{
+
+    .init {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+    
 
-        .image-left{
+        .image-left {
             width: 40%;
-            img{
+
+            img {
                 width: 300px;
                 height: 450px;
 
             }
         }
 
-        .right-form{
-            form{
+        .right-form {
+            margin-left: 50px;
+            form {
                 display: flex;
                 flex-direction: column;
                 height: 200px;
-                label{
+
+                label {
                     font-size: 20px;
                     font-family: Arial, Helvetica, sans-serif;
-                    font-weight: 500;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
                 }
-                #level{
+
+                #level {
                     width: 180px;
                     height: 30px;
-                   color: #0a4646;
+                    color: #0a4646;
                     border: none;
                     border-radius: 5px;
                     background-color: #ffff;
                     font-size: 18px;
                     font-weight: 600;
                     text-align: center;
-                    margin-bottom: 10px;
+                    margin-bottom: 30px;
+                }
+
+                button{
+                    width: 180px;
+                    height: 40px;
+                    color: #fff;
+                    background-color: #0a4646;
+                    border: 2px solid white;
+                    border-radius: 10px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    transition: .8s all;
+                    &:hover{
+                        background-color: #fff;
+                        border: 2px solid #0a4646;
+                        color: #0a4646;
+                        padding-right: 20px;
+                    }
+
                 }
             }
         }
     }
 }
 
-footer{
+footer {
     background-color: #0a4646;
     width: 100%;
     margin: 0 auto;

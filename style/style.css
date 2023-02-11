@@ -262,9 +262,6 @@ header .within .hidden2 .hid a:nth-child(even) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .main-schedule .init .image-left {
@@ -274,6 +271,10 @@ header .within .hidden2 .hid a:nth-child(even) {
 .main-schedule .init .image-left img {
   width: 300px;
   height: 450px;
+}
+
+.main-schedule .init .right-form {
+  margin-left: 50px;
 }
 
 .main-schedule .init .right-form form {
@@ -290,7 +291,9 @@ header .within .hidden2 .hid a:nth-child(even) {
 .main-schedule .init .right-form form label {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .main-schedule .init .right-form form #level {
@@ -303,7 +306,27 @@ header .within .hidden2 .hid a:nth-child(even) {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.main-schedule .init .right-form form button {
+  width: 180px;
+  height: 40px;
+  color: #fff;
+  background-color: #0a4646;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: .8s all;
+  transition: .8s all;
+}
+
+.main-schedule .init .right-form form button:hover {
+  background-color: #fff;
+  border: 2px solid #0a4646;
+  color: #0a4646;
+  padding-right: 20px;
 }
 
 footer {
