@@ -3,6 +3,11 @@
     src: url(../fonts/Rubik-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Lobster";
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
 * {
     position: relative;
     box-sizing: border-box;
@@ -159,7 +164,7 @@ header {
     }
 }
 
-main {
+.main-index {
     display: flex;
     flex-direction: row;
     width: 85%;
@@ -185,6 +190,11 @@ main {
 
         h1 {
             margin-bottom: 50px;
+            text-transform: uppercase;
+            font-family: "Lobster";
+            word-spacing: 10px;
+            font-size: 35px;
+            line-height: 1.4;
         }
 
         p {
@@ -197,6 +207,52 @@ main {
                 border-radius: 20px;
                 font-weight: 500;
                 font-size: 18px;
+            }
+        }
+    }
+}
+
+.main-schedule{
+    width: 80%;
+    margin: 30px auto;
+    border: 1px solid green;
+    .init{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .image-left{
+            width: 40%;
+            img{
+                width: 300px;
+                height: 450px;
+
+            }
+        }
+
+        .right-form{
+            form{
+                display: flex;
+                flex-direction: column;
+                height: 200px;
+                label{
+                    font-size: 20px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 500;
+                }
+                #level{
+                    width: 180px;
+                    height: 30px;
+                   color: #0a4646;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #ffff;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
             }
         }
     }

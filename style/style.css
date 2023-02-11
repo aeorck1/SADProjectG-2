@@ -3,6 +3,11 @@
   src: url(../fonts/Rubik-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Lobster";
+  src: url(../fonts/Lobster-Regular.ttf);
+}
+
 * {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -180,7 +185,7 @@ header .within .hidden2 .hid a:nth-child(even) {
   background-color: #0a4646;
 }
 
-main {
+.main-index {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,16 +205,16 @@ main {
   margin: 0 auto;
 }
 
-main .left {
+.main-index .left {
   width: 45%;
 }
 
-main .left img {
+.main-index .left img {
   width: 90%;
   border-radius: 10px 30px 15px 10px;
 }
 
-main .right {
+.main-index .right {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,22 +225,85 @@ main .right {
           flex-direction: column;
 }
 
-main .right h1 {
+.main-index .right h1 {
   margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: "Lobster";
+  word-spacing: 10px;
+  font-size: 35px;
+  line-height: 1.4;
 }
 
-main .right p {
+.main-index .right p {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-main .right p a {
+.main-index .right p a {
   color: #0c7070;
   padding: 10px 20px;
   background-color: #fff;
   border-radius: 20px;
   font-weight: 500;
   font-size: 18px;
+}
+
+.main-schedule {
+  width: 80%;
+  margin: 30px auto;
+  border: 1px solid green;
+}
+
+.main-schedule .init {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-schedule .init .image-left {
+  width: 40%;
+}
+
+.main-schedule .init .image-left img {
+  width: 300px;
+  height: 450px;
+}
+
+.main-schedule .init .right-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+}
+
+.main-schedule .init .right-form form label {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.main-schedule .init .right-form form #level {
+  width: 180px;
+  height: 30px;
+  color: #0a4646;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 footer {
