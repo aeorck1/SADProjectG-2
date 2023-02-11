@@ -82,13 +82,23 @@ header .within .guest-min .div {
 header .within .guest-min .div:hover {
   background-color: #fff;
   color: #0c7070;
-  border-radius: 20px;
+  border-radius: 20px 20px 20px 0;
 }
 
 header .within .guest-min .div:hover .hidden1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header .within .guest-min .div:hover .hidden2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .within .guest-min .div:hover:nth-child(2) {
+  border-radius: 20px 20px 0 20px;
 }
 
 header .within .hidden1 {
@@ -99,6 +109,12 @@ header .within .hidden1 {
   top: 0;
   margin-top: 40px;
   margin-right: 50px;
+  -webkit-transition: 1s display;
+  transition: 1s display;
+}
+
+header .within .hidden1:nth-of-type(2) {
+  margin-right: 0;
 }
 
 header .within .hidden1 .hid {
@@ -116,9 +132,50 @@ header .within .hidden1 .hid {
 header .within .hidden1 .hid a {
   color: #0a4646;
   background-color: #fff;
+  text-align: center;
 }
 
 header .within .hidden1 .hid a:nth-child(even) {
+  color: #ffff;
+  background-color: #0a4646;
+}
+
+header .within .hidden2 {
+  z-index: 1;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  margin-top: 40px;
+  margin-left: 20px;
+  -webkit-transition: 1s display;
+  transition: 1s display;
+}
+
+header .within .hidden2:nth-of-type(2) {
+  margin-right: 0;
+}
+
+header .within .hidden2 .hid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: auto;
+}
+
+header .within .hidden2 .hid a {
+  color: #0a4646;
+  background-color: #fff;
+  width: 170px;
+  text-align: center;
+}
+
+header .within .hidden2 .hid a:nth-child(even) {
   color: #ffff;
   background-color: #0a4646;
 }
