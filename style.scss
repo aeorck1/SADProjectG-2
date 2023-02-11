@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Rubik";
+    src: url(./fonts/Rubik-Regular.ttf);
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #0c7070;
+    color: white;
+    height: 100vh;
+}
+
+header {
+    background-color: #0a4646;
+    height: fit-content;
+
+    .within {
+        margin: 0 auto;
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            padding: 10px;
+
+            img {
+                width: 50px;
+            }
+        }
+
+        .guest-min {
+            width: fit-content;
+            display: flex;
+            width: 200px;
+            justify-content: space-between;
+            color: white;
+            font-family: "Rubik";
+            font-weight: 600;
+            font-size: 20px;
+
+            &>div {
+                transition: .8s color;
+                cursor: pointer;
+
+                &:hover {
+                    color: aqua;
+                }
+            }
+        }
+    }
+}
+
+main{
+    
+}

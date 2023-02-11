@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(./fonts/Rubik-Regular.ttf);
+}
+
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #0c7070;
+  color: white;
+  height: 100vh;
+}
+
+header {
+  background-color: #0a4646;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header .within {
+  margin: 0 auto;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .within a {
+  padding: 10px;
+}
+
+header .within a img {
+  width: 50px;
+}
+
+header .within .guest-min {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-family: "Rubik";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header .within .guest-min > div {
+  -webkit-transition: .8s color;
+  transition: .8s color;
+  cursor: pointer;
+}
+
+header .within .guest-min > div:hover {
+  color: aqua;
+}
+/*# sourceMappingURL=style.css.map */
