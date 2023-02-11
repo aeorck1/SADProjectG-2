@@ -71,7 +71,7 @@ header .within .guest-min {
   font-size: 20px;
 }
 
-header .within .guest-min > div {
+header .within .guest-min .div {
   padding: 10px 20px;
   -webkit-transition: .8s all;
   transition: .8s all;
@@ -79,10 +79,48 @@ header .within .guest-min > div {
   cursor: pointer;
 }
 
-header .within .guest-min > div:hover {
+header .within .guest-min .div:hover {
   background-color: #fff;
   color: #0c7070;
   border-radius: 20px;
+}
+
+header .within .guest-min .div:hover .hidden1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .within .hidden1 {
+  z-index: 1;
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 0;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+header .within .hidden1 .hid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: auto;
+}
+
+header .within .hidden1 .hid a {
+  color: #0a4646;
+  background-color: #fff;
+}
+
+header .within .hidden1 .hid a:nth-child(even) {
+  color: #ffff;
+  background-color: #0a4646;
 }
 
 main {
@@ -102,10 +140,16 @@ main {
           align-items: center;
   height: 90vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
 }
 
 main .left {
   width: 45%;
+}
+
+main .left img {
+  width: 90%;
+  border-radius: 10px 30px 15px 10px;
 }
 
 main .right {
