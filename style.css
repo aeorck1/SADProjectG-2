@@ -11,6 +11,11 @@
   padding: 0;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 body {
   width: 100%;
   background-color: #0c7070;
@@ -67,12 +72,66 @@ header .within .guest-min {
 }
 
 header .within .guest-min > div {
-  -webkit-transition: .8s color;
-  transition: .8s color;
+  padding: 10px 20px;
+  -webkit-transition: .8s all;
+  transition: .8s all;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 header .within .guest-min > div:hover {
-  color: aqua;
+  background-color: #fff;
+  color: #0c7070;
+  border-radius: 20px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 85%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .left {
+  width: 45%;
+}
+
+main .right {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .right h1 {
+  margin-bottom: 50px;
+}
+
+main .right p {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+main .right p a {
+  color: #0c7070;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */

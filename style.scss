@@ -9,7 +9,10 @@
     margin: 0;
     padding: 0;
 }
-
+a{
+    color: #fff;
+    text-decoration: none ;
+}
 body {
     width: 100%;
     background-color: #0c7070;
@@ -48,17 +51,48 @@ header {
             font-size: 20px;
 
             &>div {
-                transition: .8s color;
+                padding: 10px 20px;
+                transition: .8s all;
+                border-radius: 10px;
                 cursor: pointer;
 
                 &:hover {
-                    color: aqua;
+                    background-color: #fff;
+                    color: #0c7070;
+                    border-radius: 20px;
                 }
             }
         }
     }
 }
 
-main{
-    
+main {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    .left {
+        width: 45%;
+    }
+
+    .right {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        h1{
+            margin-bottom: 50px;
+        }
+        p{
+            align-self: flex-end;
+            a{
+                color: #0c7070;
+                padding: 10px 20px;
+                background-color: #fff;
+                border-radius: 20px;
+        }}
+    }
 }
