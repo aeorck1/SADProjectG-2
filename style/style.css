@@ -357,6 +357,40 @@ header .within .hidden2 .hid a:nth-child(even) {
   margin: 30px auto;
 }
 
+.automaton {
+  width: 90%;
+  margin: 80px auto;
+}
+
+.automaton .word-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.automaton .word-image h1 {
+  font-size: 70px;
+  width: 45%;
+  font-family: "Lobster";
+}
+
+.automaton .word-image h1 span {
+  text-transform: uppercase;
+}
+
+.automaton .word-image img {
+  width: 200px;
+  height: 200px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 footer {
   background-color: #0a4646;
   width: 100%;
