@@ -71,10 +71,17 @@ header .within .guest-min {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-family: "Rubik";
   font-weight: 600;
   font-size: 20px;
+}
+
+header .within .guest-min .image img {
+  width: 40px;
 }
 
 header .within .guest-min .div {
@@ -340,6 +347,14 @@ header .within .hidden2 .hid a:nth-child(even) {
   border: 2px solid #0a4646;
   color: #0a4646;
   padding-right: 20px;
+}
+
+.about-us {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto;
 }
 
 footer {

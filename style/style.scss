@@ -53,10 +53,18 @@ header {
             display: flex;
             width: 200px;
             justify-content: space-between;
+            align-items: center;
             color: white;
             font-family: "Rubik";
             font-weight: 600;
             font-size: 20px;
+
+
+            .image{
+                img{
+                    width: 40px;
+                }
+            }
 
             .div {
                 padding: 10px 20px;
@@ -170,6 +178,8 @@ header {
 
     }
 }
+
+
 
 .main-index {
     width: 85%;
@@ -303,6 +313,14 @@ header {
             }
         }
     }
+}
+
+
+//About Us 
+.about-us{
+    
+    width: 85%; display: flex;
+    margin: 30px auto;
 }
 
 footer {
