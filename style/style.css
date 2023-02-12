@@ -392,9 +392,9 @@ header .within .hidden2 .hid a:nth-child(even) {
 }
 
 .mani {
-  width: 80%;
+  width: 500px;
+  border: 3px solid #fff;
   margin: 30px auto;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,16 +408,28 @@ header .within .hidden2 .hid a:nth-child(even) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px;
+  border-radius: 20px;
 }
 
 .mani .imag img {
-  width: 300px;
+  width: 250px;
 }
 
 .mani .forming {
   width: 300px;
   margin: 40px;
   font-family: "Rubik";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mani .forming label {
@@ -426,11 +438,12 @@ header .within .hidden2 .hid a:nth-child(even) {
 }
 
 .mani .forming #username, .mani .forming #password {
-  margin-bottom: 10px;
-  width: 250px;
+  margin-bottom: 40px;
+  width: 220px;
   height: 30px;
   font-size: 20px;
   border: 2px solid #0c7070;
+  border-radius: 5px;
 }
 
 .mani .forming button {
