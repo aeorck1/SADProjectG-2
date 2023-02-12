@@ -44,3 +44,9 @@ class ModelTest(TestCase):
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
 
+    def test_create_manager(self):
+        """Test for creating a new manager user"""
+
+        user = get_user_model().objects.create_manager(self.email, self.password)
+        self.assertTrue(user.is_staff)
+        self.assertFalse(user.is_superuser)

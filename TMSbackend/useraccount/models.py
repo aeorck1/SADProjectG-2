@@ -29,6 +29,16 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         
         return user
+    
+    def create_manager(self, email, password=None, **kwargs):
+        """Create and save a new manager"""
+
+        user = self.create_user(email, password, **kwargs)
+        user.is_staff = True
+        user.is_superuser = False
+        user.save(using=self._db)
+
+        return user
 
 
 class User(AbstractBaseUser, PermissionsMixin):
@@ -39,6 +49,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     department = models.CharField(max_length=255, null=True)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
+    date_joined = models.DateField(auto_now_add=True)
 
     objects = UserManager()
 
