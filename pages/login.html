@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COmpode</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="within">
+            <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+
+            <div class="guest-min">
+                <div>Guest</div>
+
+                <div>Admin</div>
+            </div>
+        </div>
+    </header>
+<main class="mani">
+
+    <div class="imag">
+        <img src="../images/adminlog.png" alt="Admin Log">
+    </div>
+    <form class="forming" action="../TMSbackend/useraccount/admin.py" method="post">
+        <label for="username">Admin ID</label>
+        <br>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">Admin Passkey</label> <br>
+        <input type="password" name="password" id="password" required>
+
+        <button type="submit">Sign In</button>
+    </form>
+    </main>
+</body>
+
+</html>
