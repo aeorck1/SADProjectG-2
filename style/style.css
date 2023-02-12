@@ -391,6 +391,60 @@ header .within .hidden2 .hid a:nth-child(even) {
           filter: invert(1);
 }
 
+.mani {
+  width: 80%;
+  margin: 30px auto;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mani .imag img {
+  width: 300px;
+}
+
+.mani .forming {
+  width: 300px;
+  margin: 40px;
+  font-family: "Rubik";
+}
+
+.mani .forming label {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.mani .forming #username, .mani .forming #password {
+  margin-bottom: 10px;
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  border: 2px solid #0c7070;
+}
+
+.mani .forming button {
+  display: block;
+  width: 100px;
+  height: 35px;
+  font-weight: 600;
+  color: #ffff;
+  background-color: #0a4646;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
 footer {
   background-color: #0a4646;
   width: 100%;
