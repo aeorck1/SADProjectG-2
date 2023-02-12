@@ -13,6 +13,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -171,52 +172,63 @@ header {
 }
 
 .main-index {
-    display: flex;
-    flex-direction: row;
     width: 85%;
-    justify-content: space-between;
-    align-items: center;
-    height: 90vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
 
-    .left {
-        width: 45%;
-
-        img {
-            width: 90%;
-            border-radius: 10px 30px 15px 10px;
-        }
-    }
-
-    .right {
-        width: 45%;
+    .main-top {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
 
-        h1 {
-            margin-bottom: 50px;
-            text-transform: uppercase;
-            font-family: "Lobster";
-            word-spacing: 10px;
-            font-size: 35px;
-            line-height: 1.4;
+        .left {
+            width: 45%;
+
+            img {
+                width: 90%;
+                border-radius: 10px 30px 15px 10px;
+            }
         }
 
-        p {
-            align-self: flex-end;
+        .right {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
 
-            a {
-                color: #0c7070;
-                padding: 10px 20px;
-                background-color: #fff;
-                border-radius: 20px;
-                font-weight: 500;
-                font-size: 18px;
+            h1 {
+                margin-bottom: 50px;
+                text-transform: uppercase;
+                font-family: "Lobster";
+                word-spacing: 10px;
+                font-size: 35px;
+                line-height: 1.4;
+                
+            }
+
+            p {
+                align-self: flex-end;
+
+                a {
+                    color: #0c7070;
+                    padding: 10px 20px;
+                    background-color: #fff;
+                    border-radius: 20px;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
             }
         }
     }
+
+    #about-us{
+       line-height: 1.3;
+       word-spacing: 3px;
+       margin-bottom: 30px;
+    }
 }
+
 //CSS styling for the Timetable form schedule
 .main-schedule {
     width: 80%;
@@ -227,7 +239,8 @@ header {
         width: 100%;
         display: flex;
         align-items: center;
-    
+        justify-content: center;
+
 
         .image-left {
             width: 40%;
@@ -241,6 +254,7 @@ header {
 
         .right-form {
             margin-left: 50px;
+
             form {
                 display: flex;
                 flex-direction: column;
@@ -267,7 +281,7 @@ header {
                     margin-bottom: 30px;
                 }
 
-                button{
+                button {
                     width: 180px;
                     height: 40px;
                     color: #fff;
@@ -277,7 +291,8 @@ header {
                     font-size: 18px;
                     font-weight: 600;
                     transition: .8s all;
-                    &:hover{
+
+                    &:hover {
                         background-color: #fff;
                         border: 2px solid #0a4646;
                         color: #0a4646;

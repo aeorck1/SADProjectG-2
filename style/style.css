@@ -14,6 +14,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -186,6 +187,12 @@ header .within .hidden2 .hid a:nth-child(even) {
 }
 
 .main-index {
+  width: 85%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+}
+
+.main-index .main-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +200,6 @@ header .within .hidden2 .hid a:nth-child(even) {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 85%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -201,20 +207,18 @@ header .within .hidden2 .hid a:nth-child(even) {
       -ms-flex-align: center;
           align-items: center;
   height: 90vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0 auto;
 }
 
-.main-index .left {
+.main-index .main-top .left {
   width: 45%;
 }
 
-.main-index .left img {
+.main-index .main-top .left img {
   width: 90%;
   border-radius: 10px 30px 15px 10px;
 }
 
-.main-index .right {
+.main-index .main-top .right {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,7 +229,7 @@ header .within .hidden2 .hid a:nth-child(even) {
           flex-direction: column;
 }
 
-.main-index .right h1 {
+.main-index .main-top .right h1 {
   margin-bottom: 50px;
   text-transform: uppercase;
   font-family: "Lobster";
@@ -234,18 +238,24 @@ header .within .hidden2 .hid a:nth-child(even) {
   line-height: 1.4;
 }
 
-.main-index .right p {
+.main-index .main-top .right p {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.main-index .right p a {
+.main-index .main-top .right p a {
   color: #0c7070;
   padding: 10px 20px;
   background-color: #fff;
   border-radius: 20px;
   font-weight: 500;
   font-size: 18px;
+}
+
+.main-index #about-us {
+  line-height: 1.3;
+  word-spacing: 3px;
+  margin-bottom: 30px;
 }
 
 .main-schedule {
@@ -262,6 +272,9 @@ header .within .hidden2 .hid a:nth-child(even) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-schedule .init .image-left {
