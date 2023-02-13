@@ -417,33 +417,80 @@ footer {
 
 
 //Admin Page
-.automaton {
-    width: 90%;
-    margin: 80px auto;
+.admin3{
+    background-color: #000;
+}
+.profile{
+    background-color: #91A39C;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        border-radius: 40px;
+}
 
-    .word-image {
+.automaton{
+    width: 88%;
+    margin: 30px auto 80px;
+
+    .automate{
+        width: 100%;
+        font-family: "Oleo";
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .right{
+            width: 500px;
+            text-align: center;
+            h1{               
+                font-size: 96px;
+                margin-bottom: 10px;
+            }
+           h3{
+            font-size: 64px;
+            line-height: 89px;
+            text-transform: lowercase;
+            span{
+                color: #5E48BD;
+            }
+            margin-bottom: 63px;
+           }
 
-        h1 {
-            font-size: 70px;
+           a{
+            background-color: #DFACBE;
+            font-family: "Roboto";
+            font-weight: 700;
+            font-size: 32px;
+            padding: 10px 30px;
+            border-radius: 28px;
+            transition: .6s all;
+            &:hover{
+                background-color: #000000;
+                color: #DFACBE;
+               
+               
+            }
+        
+           }
+        }
+
+        .left{
             width: 45%;
-            font-family: "Lobster";
-
-            span {
-                text-transform: uppercase;
+            img{
+                width: 500px;
             }
         }
 
-        img {
-            width: 200px;
-            height: 200px;
-            filter: invert(1);
+        .robot{
+            position: absolute;
+            bottom: 0;
+            margin-left: -120px;
+            margin-bottom: -180px;
+            img{
+                width: 400px;
+                height: 450px;
+            }
         }
-
     }
-
 }
 
 
@@ -544,7 +591,7 @@ footer {
 
 footer {
     width: 100%;
-    margin: 0 auto;
+    margin: 40px auto 0;
     color: #000;
     text-align: center;
     padding: 20px;

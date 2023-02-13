@@ -498,12 +498,30 @@ footer .within .hidden2 .hid a:nth-child(even) {
   width: 60%;
 }
 
-.automaton {
-  width: 90%;
-  margin: 80px auto;
+.admin3 {
+  background-color: #000;
 }
 
-.automaton .word-image {
+.profile {
+  background-color: #91A39C;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.automaton {
+  width: 88%;
+  margin: 30px auto 80px;
+}
+
+.automaton .automate {
+  width: 100%;
+  font-family: "Oleo";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,21 +533,61 @@ footer .within .hidden2 .hid a:nth-child(even) {
           align-items: center;
 }
 
-.automaton .word-image h1 {
-  font-size: 70px;
+.automaton .automate .right {
+  width: 500px;
+  text-align: center;
+}
+
+.automaton .automate .right h1 {
+  font-size: 96px;
+  margin-bottom: 10px;
+}
+
+.automaton .automate .right h3 {
+  font-size: 64px;
+  line-height: 89px;
+  text-transform: lowercase;
+  margin-bottom: 63px;
+}
+
+.automaton .automate .right h3 span {
+  color: #5E48BD;
+}
+
+.automaton .automate .right a {
+  background-color: #DFACBE;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 32px;
+  padding: 10px 30px;
+  border-radius: 28px;
+  -webkit-transition: .6s all;
+  transition: .6s all;
+}
+
+.automaton .automate .right a:hover {
+  background-color: #000000;
+  color: #DFACBE;
+}
+
+.automaton .automate .left {
   width: 45%;
-  font-family: "Lobster";
 }
 
-.automaton .word-image h1 span {
-  text-transform: uppercase;
+.automaton .automate .left img {
+  width: 500px;
 }
 
-.automaton .word-image img {
-  width: 200px;
-  height: 200px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+.automaton .automate .robot {
+  position: absolute;
+  bottom: 0;
+  margin-left: -120px;
+  margin-bottom: -180px;
+}
+
+.automaton .automate .robot img {
+  width: 400px;
+  height: 450px;
 }
 
 .mani {
@@ -656,7 +714,7 @@ footer .within .hidden2 .hid a:nth-child(even) {
 
 footer {
   width: 100%;
-  margin: 0 auto;
+  margin: 40px auto 0;
   color: #000;
   text-align: center;
   padding: 20px;
