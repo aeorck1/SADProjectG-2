@@ -840,7 +840,9 @@ footer .within .hidden2 .hid a:nth-child(even) {
   color: #2c4574;
 }
 
-.resources .form-resources form .inside-form .nesting .in .timer #hour, .resources .form-resources form .inside-form .nesting .in .timer #units, .resources .form-resources form .inside-form .nesting .in .timer #size {
+.resources .form-resources form .inside-form .nesting .in .timer #hour,
+.resources .form-resources form .inside-form .nesting .in .timer #units,
+.resources .form-resources form .inside-form .nesting .in .timer #size {
   width: 60px;
   height: 30px;
   background-color: rgba(229, 230, 232, 0.57);
@@ -921,5 +923,35 @@ footer {
   width: 25px;
   height: 3px;
   background-color: #202020;
+}
+
+table {
+  width: 80%;
+}
+
+table,
+td,
+tr,
+th {
+  margin: 30px auto;
+  border: 2px solid white;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: 800;
+}
+
+td {
+  height: 70px;
+  padding: 10px 20px;
+}
+
+i {
+  color: #2c2a2a;
+}
+
+i::before {
+  content: "*";
 }
 /*# sourceMappingURL=style.css.map */

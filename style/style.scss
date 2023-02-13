@@ -433,6 +433,7 @@ footer {
     border-radius: 40px;
 }
 
+//Automaton
 .automaton {
     width: 88%;
     margin: 30px auto 80px;
@@ -675,18 +676,21 @@ footer {
                             justify-content: space-between;
                         }
 
-                        .timer{
+                        .timer {
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
 
-                            input[type=number]{
+                            input[type=number] {
                                 appearance: number;
                                 align-self: flex-start;
                                 font-size: large;
                                 color: rgb(44, 69, 116);
-                              }
-                            #hour,#units, #size{
+                            }
+
+                            #hour,
+                            #units,
+                            #size {
                                 width: 60px;
                                 height: 30px;
                                 background-color: rgba(229, 230, 232, 0.57);
@@ -763,5 +767,39 @@ footer {
         width: 25px;
         height: 3px;
         background-color: rgb(32, 32, 32);
+    }
+}
+
+//Table design
+
+
+table {
+    width: 80%;
+   
+}
+
+table,
+td,
+tr,
+th {
+
+    margin: 30px auto;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 800;
+
+}
+td{
+    height: 70px;
+    padding: 10px 20px;
+}
+
+i{
+    color: rgb(44, 42, 42);
+    &::before{
+        content: "*";
     }
 }
