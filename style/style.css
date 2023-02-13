@@ -821,7 +821,11 @@ footer .within .hidden2 .hid a:nth-child(even) {
 .resources .form-resources form .inside-form .nesting #r1_name,
 .resources .form-resources form .inside-form .nesting #r1_location,
 .resources .form-resources form .inside-form .nesting #r2_name,
-.resources .form-resources form .inside-form .nesting #r2_location {
+.resources .form-resources form .inside-form .nesting #r2_location,
+.resources .form-resources form .inside-form .nesting #l1_name,
+.resources .form-resources form .inside-form .nesting #l1_mail,
+.resources .form-resources form .inside-form .nesting #l2_name,
+.resources .form-resources form .inside-form .nesting #l2_email {
   -ms-flex-item-align: end;
       align-self: flex-end;
   border-radius: 10px;

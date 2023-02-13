@@ -640,6 +640,7 @@ footer {
         form {
             display: flex;
             flex-direction: column;
+
             .inside-form {
                 background-color: rgba(185, 209, 255, 0.57);
                 border-radius: 25px;
@@ -678,7 +679,11 @@ footer {
                     #r1_name,
                     #r1_location,
                     #r2_name,
-                    #r2_location {
+                    #r2_location,
+                    #l1_name,
+                    #l1_mail,
+                    #l2_name,
+                    #l2_email {
                         align-self: flex-end;
                         border-radius: 10px;
                         width: 400px;
@@ -692,7 +697,8 @@ footer {
                     }
                 }
             }
-            button{
+
+            button {
                 background-color: #DFACBE;
                 width: fit-content;
                 padding: 10px 40px;
@@ -704,10 +710,10 @@ footer {
                 color: #fff;
                 align-self: flex-end;
                 margin-top: 40px;
-    border-radius: 10px;
+                border-radius: 10px;
 
-    
-            
+
+
             }
 
 
