@@ -818,6 +818,35 @@ footer .within .hidden2 .hid a:nth-child(even) {
           justify-content: space-between;
 }
 
+.resources .form-resources form .inside-form .nesting .in .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resources .form-resources form .inside-form .nesting .in .timer input[type=number] {
+  -webkit-appearance: number;
+     -moz-appearance: number;
+          appearance: number;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: large;
+  color: #2c4574;
+}
+
+.resources .form-resources form .inside-form .nesting .in .timer #hour, .resources .form-resources form .inside-form .nesting .in .timer #units, .resources .form-resources form .inside-form .nesting .in .timer #size {
+  width: 60px;
+  height: 30px;
+  background-color: rgba(229, 230, 232, 0.57);
+  border: none;
+}
+
 .resources .form-resources form .inside-form .nesting #r1_name,
 .resources .form-resources form .inside-form .nesting #r1_location,
 .resources .form-resources form .inside-form .nesting #r2_name,
@@ -825,7 +854,8 @@ footer .within .hidden2 .hid a:nth-child(even) {
 .resources .form-resources form .inside-form .nesting #l1_name,
 .resources .form-resources form .inside-form .nesting #l1_mail,
 .resources .form-resources form .inside-form .nesting #l2_name,
-.resources .form-resources form .inside-form .nesting #l2_email {
+.resources .form-resources form .inside-form .nesting #l2_email,
+.resources .form-resources form .inside-form .nesting #course {
   -ms-flex-item-align: end;
       align-self: flex-end;
   border-radius: 10px;

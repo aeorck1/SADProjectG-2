@@ -674,6 +674,25 @@ footer {
                             align-items: center;
                             justify-content: space-between;
                         }
+
+                        .timer{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            input[type=number]{
+                                appearance: number;
+                                align-self: flex-start;
+                                font-size: large;
+                                color: rgb(44, 69, 116);
+                              }
+                            #hour,#units, #size{
+                                width: 60px;
+                                height: 30px;
+                                background-color: rgba(229, 230, 232, 0.57);
+                                border: none;
+                            }
+                        }
                     }
 
                     #r1_name,
@@ -683,7 +702,8 @@ footer {
                     #l1_name,
                     #l1_mail,
                     #l2_name,
-                    #l2_email {
+                    #l2_email,
+                    #course {
                         align-self: flex-end;
                         border-radius: 10px;
                         width: 400px;
@@ -711,9 +731,6 @@ footer {
                 align-self: flex-end;
                 margin-top: 40px;
                 border-radius: 10px;
-
-
-
             }
 
 
