@@ -68,7 +68,7 @@ footer {
         .guest-min {
             width: fit-content;
             display: flex;
-            width: 350px;
+            width: 0px;
             justify-content: space-between;
             align-items: center;
             color: white;
@@ -589,6 +589,40 @@ footer {
     }
 }
 
+//Resources pages
+.resources{
+    width: 90%;
+    margin:10px auto;
+    font-family: "Inter";
+    .top{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            padding: 10px 20px;
+            background-color: #DFACBE;
+            border-radius: 20px;
+            font-family: "Inter";
+            font-size: 20px;
+            font-weight: 600;
+            transition: .6s all;
+
+            &:hover{
+                background-color: #ffff;
+                color: #0a4646;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .form-resources{
+        width: 80%;
+        margin: 20px auto;
+
+    }
+}
+
 footer {
     width: 100%;
     margin: 40px auto 0;
@@ -597,4 +631,20 @@ footer {
     padding: 20px;
     font-family: "Inter";
 
+}
+
+.hamburger{
+    height: 30px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 5px;
+    .lines{
+        width: 25px;
+        height: 3px;
+        background-color: rgb(32, 32, 32);
+    }
 }
