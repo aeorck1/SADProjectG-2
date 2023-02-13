@@ -14,33 +14,33 @@ class UserSerializer(serializers.ModelSerializer):
                 'min_length': 5
             },
         }
-    
+
     def create(self, validated_data):
         """Creating user from validated data"""
 
         return get_user_model().objects.create_user(**validated_data)
-    
+
     def update(self, instance, validated_data):
         """Update user"""
 
         password = validated_data.pop('password', None)
-        
+
         user = super().update(instance, validated_data)
-        
+
         if password is not None:
             user.set_password(password)
             user.save()
 
         return user
-    
+
 class ManagerSerializer(UserSerializer):
     """Serializers for the user model"""
-    
+
     def create(self, validated_data):
         """Creating user from validated data"""
 
         return get_user_model().objects.create_manager(**validated_data)
-    
+
 
 class AuthTokenSerializer(serializers.Serializer):
     """Serializer for user Authentication Token"""
@@ -62,6 +62,6 @@ class AuthTokenSerializer(serializers.Serializer):
         if not user:
             msg = _('Unable to authenticate with the provided credentials')
             raise serializers.ValidationError(msg, code='authentication')
-        
+
         attrs['user'] = user
         return attrs
