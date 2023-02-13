@@ -283,32 +283,57 @@ footer {
 .main-schedule {
     width: 80%;
     margin: 30px auto;
-    border: 1px solid green;
+
+    a {
+        color: #DFACBE;
+        font-weight: bold;
+        font-family: "Roboto";
+
+        &::before {
+            content: '<<<';
+        }
+    }
+
+    .select {
+        margin-top: 30px;
+        font-size: 64px;
+        font-weight: 600;
+        font-family: "Inter";
+    }
 
     .init {
+        margin: 100px auto 0;
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-
+        justify-content: space-around;
 
         .image-left {
             width: 40%;
 
             img {
-                width: 300px;
-                height: 450px;
+                width: 582px;
+                height: 322px;
 
             }
         }
 
         .right-form {
+            background-color: rgba(255, 255, 255, 0.16);
+            ;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-left: 50px;
+            border-radius: 56px;
 
             form {
                 display: flex;
                 flex-direction: column;
                 height: 200px;
+                align-items: center;
 
                 label {
                     font-size: 20px;
@@ -319,28 +344,31 @@ footer {
                 }
 
                 #level {
-                    width: 180px;
-                    height: 30px;
-                    color: #0a4646;
+                    width: 350px;
+                    height: 40px;
+                    color: #e3f8f8;
                     border: none;
-                    border-radius: 5px;
-                    background-color: #ffff;
+                    border-radius: 25px;
+                    background-color: rgba(229, 230, 232, 0.57);
+                    ;
                     font-size: 18px;
                     font-weight: 600;
                     text-align: center;
                     margin-bottom: 30px;
+                    font-style: italic;
                 }
 
                 button {
                     width: 180px;
-                    height: 40px;
+                    height: 50px;
                     color: #fff;
-                    background-color: #0a4646;
+                    background-color: #DFACBE;
                     border: 2px solid white;
                     border-radius: 10px;
-                    font-size: 18px;
+                    font-size: 24px;
                     font-weight: 600;
                     transition: .8s all;
+                    font-family: "Roboto";
 
                     &:hover {
                         background-color: #fff;

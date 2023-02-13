@@ -342,11 +342,51 @@ footer .within .hidden2 .hid a:nth-child(even) {
 .main-schedule {
   width: 80%;
   margin: 30px auto;
-  border: 1px solid green;
+}
+
+.main-schedule a {
+  color: #DFACBE;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+.main-schedule a::before {
+  content: '<<<';
+}
+
+.main-schedule .select {
+  margin-top: 30px;
+  font-size: 64px;
+  font-weight: 600;
+  font-family: "Inter";
 }
 
 .main-schedule .init {
+  margin: 100px auto 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-schedule .init .image-left {
+  width: 40%;
+}
+
+.main-schedule .init .image-left img {
+  width: 582px;
+  height: 322px;
+}
+
+.main-schedule .init .right-form {
+  background-color: rgba(255, 255, 255, 0.16);
+  width: 400px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,19 +396,8 @@ footer .within .hidden2 .hid a:nth-child(even) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.main-schedule .init .image-left {
-  width: 40%;
-}
-
-.main-schedule .init .image-left img {
-  width: 300px;
-  height: 450px;
-}
-
-.main-schedule .init .right-form {
   margin-left: 50px;
+  border-radius: 56px;
 }
 
 .main-schedule .init .right-form form {
@@ -380,6 +409,9 @@ footer .within .hidden2 .hid a:nth-child(even) {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-schedule .init .right-form form label {
@@ -391,29 +423,31 @@ footer .within .hidden2 .hid a:nth-child(even) {
 }
 
 .main-schedule .init .right-form form #level {
-  width: 180px;
-  height: 30px;
-  color: #0a4646;
+  width: 350px;
+  height: 40px;
+  color: #e3f8f8;
   border: none;
-  border-radius: 5px;
-  background-color: #ffff;
+  border-radius: 25px;
+  background-color: rgba(229, 230, 232, 0.57);
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 30px;
+  font-style: italic;
 }
 
 .main-schedule .init .right-form form button {
   width: 180px;
-  height: 40px;
+  height: 50px;
   color: #fff;
-  background-color: #0a4646;
+  background-color: #DFACBE;
   border: 2px solid white;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   -webkit-transition: .8s all;
   transition: .8s all;
+  font-family: "Roboto";
 }
 
 .main-schedule .init .right-form form button:hover {
