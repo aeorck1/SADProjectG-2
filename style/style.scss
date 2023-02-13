@@ -8,6 +8,21 @@
     src: url(../fonts/Lobster-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Oleo";
+    src: url(../fonts/OleoScript-Regular.ttf);
+}
+
 * {
     position: relative;
     box-sizing: border-box;
@@ -23,13 +38,14 @@ a {
 
 body {
     width: 100%;
-    background-color: #0c7070;
+    background-color: #8F80E9;
     color: white;
-    height: 100vh;
 }
 
-header {
-    background-color: #0a4646;
+//Header Design
+header,
+footer {
+    background-color: #D9D9D9;
     height: fit-content;
 
     .within {
@@ -40,18 +56,19 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        a {
+        .home {
             padding: 10px;
+            font-family: "Roboto";
+            font-size: 36px;
+            font-weight: 700;
+            color: black;
 
-            img {
-                width: 50px;
-            }
         }
 
         .guest-min {
             width: fit-content;
             display: flex;
-            width: 200px;
+            width: 350px;
             justify-content: space-between;
             align-items: center;
             color: white;
@@ -59,22 +76,20 @@ header {
             font-weight: 600;
             font-size: 20px;
 
-
-            .image {
-                img {
-                    width: 40px;
-                }
-            }
-
-            .div {
-                padding: 10px 20px;
+            .div-guest,
+            .div-admin {
+                width: 150px;
+                padding: 10px 0;
+                text-align: center;
                 transition: .8s all;
-                border-radius: 10px;
+                border-radius: 5px;
+                background-color: #000;
                 cursor: pointer;
+                font-family: "Inter";
 
                 &:hover {
                     background-color: #fff;
-                    color: #0c7070;
+                    color: #000;
                     border-radius: 20px 20px 20px 0;
 
                     .hidden1 {
@@ -95,6 +110,9 @@ header {
 
             }
 
+            .admin2 {
+                background-color: #6A86EA;
+            }
 
         }
 
@@ -179,7 +197,7 @@ header {
     }
 }
 
-
+//Main Item on the homepage
 
 .main-index {
     width: 85%;
@@ -195,6 +213,15 @@ header {
 
         .left {
             width: 45%;
+            align-self: center;
+
+            .background {
+                width: 100%;
+                height: fit-content;
+                background: linear-gradient(224.55deg, rgba(0, 0, 0, 0.12) 5.93%, rgba(0, 0, 0, 0.0435848) 67.18%, rgba(226, 217, 217, 0.1104) 84.89%, rgba(255, 255, 255, 0.12) 97.81%);
+                background-blend-mode: darken;
+                border-radius: 46px;
+            }
 
             img {
                 width: 90%;
@@ -209,24 +236,37 @@ header {
 
             h1 {
                 margin-bottom: 50px;
-                text-transform: uppercase;
-                font-family: "Lobster";
-                word-spacing: 10px;
-                font-size: 35px;
+                text-transform: capitalize;
+                font-family: "Oleo";
+                word-spacing: 5px;
+                font-size: 45px;
                 line-height: 1.4;
+
+                span {
+                    text-transform: uppercase;
+                    color: rgba(45, 36, 36, 0.8);
+                }
 
             }
 
             p {
                 align-self: flex-end;
+                font-family: "Roboto";
 
                 a {
-                    color: #0c7070;
-                    padding: 10px 20px;
-                    background-color: #fff;
+                    color: #fff;
+                    padding: 20px 30px;
+                    background-color: #DFACBE;
                     border-radius: 20px;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 18px;
+                    transition: .6s all;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #DFACBE;
+
+                    }
                 }
             }
         }
@@ -381,12 +421,14 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        label{
+
+        label {
             font-size: 18px;
             font-weight: 800;
         }
 
-        #username, #password {
+        #username,
+        #password {
             margin-bottom: 40px;
             width: 220px;
             height: 30px;
@@ -394,7 +436,8 @@ header {
             border: 2px solid #0c7070;
             border-radius: 5px;
         }
-        button{
+
+        button {
             display: block;
             width: 140px;
             height: 50px;
@@ -410,11 +453,11 @@ header {
 }
 
 footer {
-    background-color: #0a4646;
     width: 100%;
     margin: 0 auto;
-    color: #fff;
+    color: #000;
     text-align: center;
     padding: 20px;
+    font-family: "Inter";
 
 }
