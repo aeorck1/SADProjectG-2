@@ -377,23 +377,26 @@ footer {
         }
     }
 }
-.back{
+
+.back {
     width: 90%;
     margin: 20px auto;
     color: #DFACBE;
     font-size: 20px;
-    a{
-        color: inherit ;
+
+    a {
+        color: inherit;
         font-family: "Roboto";
         font-size: 20px;
     }
-    &::before{
+
+    &::before {
         content: "<<<";
     }
 }
 
 //About Us 
-.about{
+.about {
 
     width: 85%;
     display: flex;
@@ -401,7 +404,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-family: "Inter";
-    img{
+
+    img {
         width: 450px;
         height: 400px;
     }
@@ -417,75 +421,84 @@ footer {
 
 
 //Admin Page
-.admin3{
+.admin3 {
     background-color: #000;
 }
-.profile{
+
+.profile {
     background-color: #91A39C;
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-        border-radius: 40px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 40px;
 }
 
-.automaton{
+.automaton {
     width: 88%;
     margin: 30px auto 80px;
 
-    .automate{
+    .automate {
         width: 100%;
         font-family: "Oleo";
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .right{
+
+        .right {
             width: 500px;
             text-align: center;
-            h1{               
+
+            h1 {
                 font-size: 96px;
                 margin-bottom: 10px;
             }
-           h3{
-            font-size: 64px;
-            line-height: 89px;
-            text-transform: lowercase;
-            span{
-                color: #5E48BD;
-            }
-            margin-bottom: 63px;
-           }
 
-           a{
-            background-color: #DFACBE;
-            font-family: "Roboto";
-            font-weight: 700;
-            font-size: 32px;
-            padding: 10px 30px;
-            border-radius: 28px;
-            transition: .6s all;
-            &:hover{
-                background-color: #000000;
-                color: #DFACBE;
-               
-               
+            h3 {
+                font-size: 64px;
+                line-height: 89px;
+                text-transform: lowercase;
+
+                span {
+                    color: #5E48BD;
+                }
+
+                margin-bottom: 63px;
             }
-        
-           }
+
+            a {
+                background-color: #DFACBE;
+                font-family: "Roboto";
+                font-weight: 700;
+                font-size: 32px;
+                padding: 10px 30px;
+                border-radius: 28px;
+                transition: .6s all;
+
+                &:hover {
+                    background-color: #000000;
+                    color: #DFACBE;
+
+
+                }
+
+            }
         }
 
-        .left{
+        .left {
             width: 45%;
-            img{
+
+            img {
                 width: 500px;
             }
         }
 
-        .robot{
+        .robot {
             position: absolute;
             bottom: 0;
             margin-left: -120px;
             margin-bottom: -180px;
-            img{
+
+            img {
                 width: 400px;
                 height: 450px;
             }
@@ -590,16 +603,19 @@ footer {
 }
 
 //Resources pages
-.resources{
+.resources {
     width: 90%;
-    margin:10px auto;
+    margin: 10px auto;
     font-family: "Inter";
-    .top{
-        width: 100%;
+
+    .top {
+        margin: 10px auto;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        a{
+
+        a {
             padding: 10px 20px;
             background-color: #DFACBE;
             border-radius: 20px;
@@ -608,7 +624,7 @@ footer {
             font-weight: 600;
             transition: .6s all;
 
-            &:hover{
+            &:hover {
                 background-color: #ffff;
                 color: #0a4646;
                 padding-right: 15px;
@@ -616,9 +632,86 @@ footer {
         }
     }
 
-    .form-resources{
+    .form-resources {
         width: 80%;
         margin: 20px auto;
+        border-color: 1px salmon solid;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            .inside-form {
+                background-color: rgba(185, 209, 255, 0.57);
+                border-radius: 25px;
+                padding: 20px;
+
+                li {
+                    font-size: 32px;
+                    font-weight: 400;
+                }
+
+                label {
+                    font-size: 24px;
+                    margin-bottom: 30px;
+
+                }
+
+                .nesting {
+                    width: 90%;
+                    margin: 30px auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    .in {
+                        width: 600px;
+                        display: flex;
+                        align-self: flex-end;
+                        flex-direction: column;
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                    }
+
+                    #r1_name,
+                    #r1_location,
+                    #r2_name,
+                    #r2_location {
+                        align-self: flex-end;
+                        border-radius: 10px;
+                        width: 400px;
+                        height: 40px;
+                        margin-bottom: 40px;
+                        border: none;
+                        justify-self: center;
+                        align-self: center;
+                        background-color: rgba(229, 230, 232, 0.57);
+                        ;
+                    }
+                }
+            }
+            button{
+                background-color: #DFACBE;
+                width: fit-content;
+                padding: 10px 40px;
+                font-family: "Inter";
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                border: none;
+                color: #fff;
+                align-self: flex-end;
+                margin-top: 40px;
+    border-radius: 10px;
+
+    
+            
+            }
+
+
+        }
 
     }
 }
@@ -633,7 +726,7 @@ footer {
 
 }
 
-.hamburger{
+.hamburger {
     height: 30px;
     width: 40px;
     display: flex;
@@ -642,7 +735,8 @@ footer {
     justify-content: space-around;
     border: 1px solid rgb(24, 23, 23);
     border-radius: 5px;
-    .lines{
+
+    .lines {
         width: 25px;
         height: 3px;
         background-color: rgb(32, 32, 32);

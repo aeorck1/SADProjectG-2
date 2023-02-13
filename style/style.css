@@ -719,7 +719,8 @@ footer .within .hidden2 .hid a:nth-child(even) {
 }
 
 .resources .top {
-  width: 100%;
+  margin: 10px auto;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,6 +752,107 @@ footer .within .hidden2 .hid a:nth-child(even) {
 .resources .form-resources {
   width: 80%;
   margin: 20px auto;
+  border-color: 1px salmon solid;
+}
+
+.resources .form-resources form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resources .form-resources form .inside-form {
+  background-color: rgba(185, 209, 255, 0.57);
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.resources .form-resources form .inside-form li {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.resources .form-resources form .inside-form label {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.resources .form-resources form .inside-form .nesting {
+  width: 90%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resources .form-resources form .inside-form .nesting .in {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resources .form-resources form .inside-form .nesting .in div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resources .form-resources form .inside-form .nesting #r1_name,
+.resources .form-resources form .inside-form .nesting #r1_location,
+.resources .form-resources form .inside-form .nesting #r2_name,
+.resources .form-resources form .inside-form .nesting #r2_location {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+  margin-bottom: 40px;
+  border: none;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: rgba(229, 230, 232, 0.57);
+}
+
+.resources .form-resources form button {
+  background-color: #DFACBE;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 40px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 40px;
+  border-radius: 10px;
 }
 
 footer {
