@@ -412,6 +412,9 @@ footer .within .hidden2 .hid a:nth-child(even) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .main-schedule .init .right-form form label {
@@ -500,9 +503,75 @@ footer .within .hidden2 .hid a:nth-child(even) {
 }
 
 .mani {
-  width: 500px;
-  border: 3px solid #fff;
+  width: 80%;
   margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.mani .entire {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mani .entire .nest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mani .entire .nest p {
+  font-family: "Inter";
+  font-size: 50px;
+  font-weight: 700;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.mani .entire .nest img {
+  width: 300px;
+}
+
+.mani .entire .background .forming {
+  background-color: rgba(255, 255, 255, 0.16);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 500px;
+  height: 400px;
+  margin: 40px;
+  font-family: "Rubik";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,52 +585,40 @@ footer .within .hidden2 .hid a:nth-child(even) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px;
-  border-radius: 20px;
+  border-radius: 56px;
 }
 
-.mani .imag img {
-  width: 250px;
-}
-
-.mani .forming {
-  width: 300px;
-  margin: 40px;
-  font-family: "Rubik";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.mani .forming label {
+.mani .entire .background .forming label {
   font-size: 18px;
   font-weight: 800;
+  margin-left: 40px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
-.mani .forming #username,
-.mani .forming #password {
+.mani .entire .background .forming label::after {
+  content: ":";
+}
+
+.mani .entire .background .forming #username,
+.mani .entire .background .forming #password {
   margin-bottom: 40px;
-  width: 220px;
-  height: 30px;
+  width: 300px;
+  height: 50px;
   font-size: 20px;
-  border: 2px solid #0c7070;
+  border: 2px solid #6A86EA;
   border-radius: 5px;
 }
 
-.mani .forming button {
+.mani .entire .background .forming button {
   display: block;
   width: 140px;
   height: 50px;
   font-weight: 600;
   color: #ffff;
-  background-color: #0a4646;
+  background-color: #6A86EA;
   font-size: 18px;
   border: 2px solid #fff;
   border-radius: 10px;

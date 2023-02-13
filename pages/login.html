@@ -11,20 +11,40 @@
 <body>
     <header>
         <div class="within">
-            <a href="./index.html"><img src="../images/logo.png" alt="logo"></a>
-
-            <div class="guest-min">
-                <div>Guest</div>
-
-                <div>Admin</div>
-            </div>
+         <a href="../index.html" class="home">TMS</a>
+         <div class="guest-min">
+             <a class="div-guest" href="#">Guest
+             <!-- <div class="hidden1">
+                 <div class="hid">
+                     <a href="#">Get Started</a>
+                     <a href="#">Reviews</a>
+                     <a href="#">Preferences</a>
+                     <a href="#about-us">About Us</a>
+                 </div>
+                 </div> -->
+             </a>
+ 
+             <a class="div-admin admin2" href="#username">Admin Login
+             <!-- <div class="hidden2">
+                 <div class="hid">
+                     <a href="#">View Schedule</a>
+                     <a href="#about-us">About Us</a>
+                 </div>
+                 </div> -->
+             </a>
+         </div>
         </div>
-    </header>
+     </header>
 <main class="mani">
+<div class="entire">
+    <div class="nest">
+      <p> Login as Admin </p>
+    
+    <img src="../images/adminlog.png" alt="Admin Log">
 
-    <div class="imag">
-        <img src="../images/adminlog.png" alt="Admin Log">
     </div>
+
+    <div class="background">
     <form class="forming" action="../TMSbackend/useraccount/admin.py" method="post">
         <label for="username">Admin ID</label>
         <br>
@@ -35,6 +55,9 @@
 
         <button type="submit">Sign In</button>
     </form>
+    </div>
+
+    </div>
     </main>
 </body>
 

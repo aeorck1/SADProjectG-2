@@ -334,6 +334,7 @@ footer {
                 flex-direction: column;
                 height: 200px;
                 align-items: center;
+                justify-content: space-evenly;
 
                 label {
                     font-size: 20px;
@@ -426,57 +427,93 @@ footer {
 //Login page
 .mani {
 
-    width: 500px;
-    border: 3px solid #fff;
+    width: 80%;
     margin: 30px auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 30px;
     border-radius: 20px;
 
-    .imag {
-        img {
-            width: 250px;
-        }
-    }
-
-    .forming {
-        width: 300px;
-        margin: 40px;
-        font-family: "Rubik";
+    .entire {
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
 
-        label {
-            font-size: 18px;
-            font-weight: 800;
+        .nest {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                font-family: "Inter";
+                font-size: 50px;
+                font-weight: 700;
+                align-self: flex-start;
+                margin-bottom: 30px;
+            }
+
+           
+                img {
+                    width: 300px;
+                }
+            
         }
 
-        #username,
-        #password {
-            margin-bottom: 40px;
-            width: 220px;
-            height: 30px;
-            font-size: 20px;
-            border: 2px solid #0c7070;
-            border-radius: 5px;
-        }
+       .background{
 
-        button {
-            display: block;
-            width: 140px;
-            height: 50px;
-            font-weight: 600;
-            color: #ffff;
-            background-color: #0a4646;
-            font-size: 18px;
-            border: 2px solid #fff;
-            border-radius: 10px;
+        .forming {
+            background-color: rgba(255, 255, 255, 0.16);;
+            align-self: flex-end;
+            width: 500px;
+            height: 400px;
+            margin: 40px;
+            font-family: "Rubik";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 56px;
 
+            label {
+                font-size: 18px;
+                font-weight: 800;
+                margin-left: 40px;
+                align-self: flex-start; 
+                font-size: 20px;
+                padding-bottom: 10px;
+                &::after{
+                    content: ":";
+                }
+            }
+
+            #username,
+            #password {
+                margin-bottom: 40px;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                border: 2px solid #6A86EA;
+                border-radius: 5px;
+            }
+
+            button {
+                display: block;
+                width: 140px;
+                height: 50px;
+                font-weight: 600;
+                color: #ffff;
+                background-color: #6A86EA;
+                font-size: 18px;
+                border: 2px solid #fff;
+                border-radius: 10px;
+
+            }
         }
+       }
     }
 }
 
