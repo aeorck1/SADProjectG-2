@@ -271,12 +271,6 @@ footer {
             }
         }
     }
-
-    #about-us {
-        line-height: 1.3;
-        word-spacing: 3px;
-        margin-bottom: 30px;
-    }
 }
 
 //CSS styling for the Timetable form schedule
@@ -383,15 +377,44 @@ footer {
         }
     }
 }
-
+.back{
+    width: 90%;
+    margin: 20px auto;
+    color: #DFACBE;
+    font-size: 20px;
+    a{
+        color: inherit ;
+        font-family: "Roboto";
+        font-size: 20px;
+    }
+    &::before{
+        content: "<<<";
+    }
+}
 
 //About Us 
-.about-us {
+.about{
 
     width: 85%;
     display: flex;
-    margin: 30px auto;
+    margin: 60px auto 0;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter";
+    img{
+        width: 450px;
+        height: 400px;
+    }
+
+    #about-us {
+        line-height: 1.3;
+        word-spacing: 3px;
+        margin-bottom: 30px;
+        width: 60%;
+    }
 }
+
+
 
 //Admin Page
 .automaton {
@@ -456,64 +479,66 @@ footer {
                 margin-bottom: 30px;
             }
 
-           
-                img {
-                    width: 300px;
-                }
-            
-        }
 
-       .background{
-
-        .forming {
-            background-color: rgba(255, 255, 255, 0.16);;
-            align-self: flex-end;
-            width: 500px;
-            height: 400px;
-            margin: 40px;
-            font-family: "Rubik";
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 56px;
-
-            label {
-                font-size: 18px;
-                font-weight: 800;
-                margin-left: 40px;
-                align-self: flex-start; 
-                font-size: 20px;
-                padding-bottom: 10px;
-                &::after{
-                    content: ":";
-                }
-            }
-
-            #username,
-            #password {
-                margin-bottom: 40px;
+            img {
                 width: 300px;
-                height: 50px;
-                font-size: 20px;
-                border: 2px solid #6A86EA;
-                border-radius: 5px;
             }
 
-            button {
-                display: block;
-                width: 140px;
-                height: 50px;
-                font-weight: 600;
-                color: #ffff;
-                background-color: #6A86EA;
-                font-size: 18px;
-                border: 2px solid #fff;
-                border-radius: 10px;
+        }
 
+        .background {
+
+            .forming {
+                background-color: rgba(255, 255, 255, 0.16);
+                ;
+                align-self: flex-end;
+                width: 500px;
+                height: 400px;
+                margin: 40px;
+                font-family: "Rubik";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 56px;
+
+                label {
+                    font-size: 18px;
+                    font-weight: 800;
+                    margin-left: 40px;
+                    align-self: flex-start;
+                    font-size: 20px;
+                    padding-bottom: 10px;
+
+                    &::after {
+                        content: ":";
+                    }
+                }
+
+                #username,
+                #password {
+                    margin-bottom: 40px;
+                    width: 300px;
+                    height: 50px;
+                    font-size: 20px;
+                    border: 2px solid #6A86EA;
+                    border-radius: 5px;
+                }
+
+                button {
+                    display: block;
+                    width: 140px;
+                    height: 50px;
+                    font-weight: 600;
+                    color: #ffff;
+                    background-color: #6A86EA;
+                    font-size: 18px;
+                    border: 2px solid #fff;
+                    border-radius: 10px;
+
+                }
             }
         }
-       }
     }
 }
 

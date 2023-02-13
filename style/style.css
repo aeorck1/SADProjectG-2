@@ -333,12 +333,6 @@ footer .within .hidden2 .hid a:nth-child(even) {
   color: #DFACBE;
 }
 
-.main-index #about-us {
-  line-height: 1.3;
-  word-spacing: 3px;
-  margin-bottom: 30px;
-}
-
 .main-schedule {
   width: 80%;
   margin: 30px auto;
@@ -460,12 +454,48 @@ footer .within .hidden2 .hid a:nth-child(even) {
   padding-right: 20px;
 }
 
-.about-us {
+.back {
+  width: 90%;
+  margin: 20px auto;
+  color: #DFACBE;
+  font-size: 20px;
+}
+
+.back a {
+  color: inherit;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.back::before {
+  content: "<<<";
+}
+
+.about {
   width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px auto;
+  margin: 60px auto 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter";
+}
+
+.about img {
+  width: 450px;
+  height: 400px;
+}
+
+.about #about-us {
+  line-height: 1.3;
+  word-spacing: 3px;
+  margin-bottom: 30px;
+  width: 60%;
 }
 
 .automaton {
